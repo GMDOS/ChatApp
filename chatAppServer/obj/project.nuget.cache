@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "fGBX8FB9XEt51hqaiTIgdICyBPaoyYhPgW+ml3cUbJ7UOOHvCSFpKUxvi0hF7Nb0IDG0l/nBsJlZkROUzTI8cw==",
+  "dgSpecHash": "+04Z3k33aBcSkJCnkBbXBDWXrcwqVxrL3o/GW6UIHbU9qyO8qhN/soaTfOukzmP8EC/oMAKO8fOrtXTC/6Ol2Q==",
   "success": true,
   "projectFilePath": "/workspaces/ChatApp/chatAppServer/chatApp.csproj",
   "expectedPackageFiles": [
     "/home/codespace/.nuget/packages/htmlagilitypack/1.11.61/htmlagilitypack.1.11.61.nupkg.sha512",
     "/home/codespace/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/mqttnet/4.3.6.1152/mqttnet.4.3.6.1152.nupkg.sha512",
     "/home/codespace/.nuget/packages/npgsql/8.0.3/npgsql.8.0.3.nupkg.sha512"
   ],
   "logs": []

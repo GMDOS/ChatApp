@@ -29,3 +29,4 @@
 /workspaces/ChatApp/chatAppServer/obj/Debug/net8.0/chatApp.genruntimeconfig.cache
 /workspaces/ChatApp/chatAppServer/obj/Debug/net8.0/ref/chatApp.dll
 /workspaces/ChatApp/chatAppServer/bin/Debug/net8.0/config.json
+/workspaces/ChatApp/chatAppServer/bin/Debug/net8.0/MQTTnet.dll

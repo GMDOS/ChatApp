@@ -42,6 +42,15 @@
           "buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
         }
       },
+      "MQTTnet/4.3.6.1152": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/MQTTnet.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/MQTTnet.dll": {}
+        }
+      },
       "Npgsql/8.0.3": {
         "type": "package",
         "dependencies": {
@@ -194,6 +203,30 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "MQTTnet/4.3.6.1152": {
+      "sha512": "XBgqx60FIWiBqTiLNF40EIhENLrLDzE3I9ujzZ7343QCeAWTHP70fO0mN6LeElSfubzfRSugLpPnd0cZiccUOw==",
+      "type": "package",
+      "path": "mqttnet/4.3.6.1152",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/MQTTnet.dll",
+        "lib/net461/MQTTnet.dll",
+        "lib/net48/MQTTnet.dll",
+        "lib/net5.0/MQTTnet.dll",
+        "lib/net6.0/MQTTnet.dll",
+        "lib/net7.0/MQTTnet.dll",
+        "lib/netcoreapp3.1/MQTTnet.dll",
+        "lib/netstandard1.3/MQTTnet.dll",
+        "lib/netstandard2.0/MQTTnet.dll",
+        "lib/netstandard2.1/MQTTnet.dll",
+        "lib/uap10.0.10240/MQTTnet.dll",
+        "lib/uap10.0.10240/MQTTnet.pri",
+        "mqttnet.4.3.6.1152.nupkg.sha512",
+        "mqttnet.nuspec",
+        "nuget.png"
+      ]
+    },
     "Npgsql/8.0.3": {
       "sha512": "6WEmzsQJCZAlUG1pThKg/RmeF6V+I0DmBBBE/8YzpRtEzhyZzKcK7ulMANDm5CkxrALBEC8H+5plxHWtIL7xnA==",
       "type": "package",
@@ -216,6 +249,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "HtmlAgilityPack >= 1.11.61",
+      "MQTTnet >= 4.3.6.1152",
       "Npgsql >= 8.0.3"
     ]
   },
@@ -264,6 +298,10 @@
           "HtmlAgilityPack": {
             "target": "Package",
             "version": "[1.11.61, )"
+          },
+          "MQTTnet": {
+            "target": "Package",
+            "version": "[4.3.6.1152, )"
           },
           "Npgsql": {
             "target": "Package",

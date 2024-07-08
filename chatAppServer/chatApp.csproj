@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.61" />
+    <PackageReference Include="MQTTnet" Version="4.3.6.1152" />
     <PackageReference Include="Npgsql" Version="8.0.3" />
   </ItemGroup>
 

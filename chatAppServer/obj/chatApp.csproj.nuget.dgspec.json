@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[1.11.61, )"
             },
+            "MQTTnet": {
+              "target": "Package",
+              "version": "[4.3.6.1152, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[8.0.3, )"

@@ -1,0 +1,15 @@
+/workspaces/ChatApp/chatAppWSTest/bin/Debug/net8.0/chatAppWSTest
+/workspaces/ChatApp/chatAppWSTest/bin/Debug/net8.0/chatAppWSTest.deps.json
+/workspaces/ChatApp/chatAppWSTest/bin/Debug/net8.0/chatAppWSTest.runtimeconfig.json
+/workspaces/ChatApp/chatAppWSTest/bin/Debug/net8.0/chatAppWSTest.dll
+/workspaces/ChatApp/chatAppWSTest/bin/Debug/net8.0/chatAppWSTest.pdb
+/workspaces/ChatApp/chatAppWSTest/obj/Debug/net8.0/chatAppWSTest.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/ChatApp/chatAppWSTest/obj/Debug/net8.0/chatAppWSTest.AssemblyInfoInputs.cache
+/workspaces/ChatApp/chatAppWSTest/obj/Debug/net8.0/chatAppWSTest.AssemblyInfo.cs
+/workspaces/ChatApp/chatAppWSTest/obj/Debug/net8.0/chatAppWSTest.csproj.CoreCompileInputs.cache
+/workspaces/ChatApp/chatAppWSTest/obj/Debug/net8.0/chatAppWSTest.sourcelink.json
+/workspaces/ChatApp/chatAppWSTest/obj/Debug/net8.0/chatAppWSTest.dll
+/workspaces/ChatApp/chatAppWSTest/obj/Debug/net8.0/refint/chatAppWSTest.dll
+/workspaces/ChatApp/chatAppWSTest/obj/Debug/net8.0/chatAppWSTest.pdb
+/workspaces/ChatApp/chatAppWSTest/obj/Debug/net8.0/chatAppWSTest.genruntimeconfig.cache
+/workspaces/ChatApp/chatAppWSTest/obj/Debug/net8.0/ref/chatAppWSTest.dll
