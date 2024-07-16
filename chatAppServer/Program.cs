@@ -31,18 +31,19 @@ app.Use(async (context, next) =>
     if (context.WebSockets.IsWebSocketRequest)
     {
         using var webSocket = await context.WebSockets.AcceptWebSocketAsync();
-        
+
         // Função callback para tratar a mensagem recebida
-        void HandleMessage(string message)
+        async Task HandleMessage(string message)
         {
             // Lógica para processar a mensagem recebida
             Console.WriteLine($"Mensagem recebida: {message}");
+            await SendWebSocketMessage(webSocket, message);
             // Aqui você pode adicionar sua lógica para processar a mensagem recebida
         }
 
         // Chama a função de escuta passando o WebSocket e o callback
         await ListenWebSocket(webSocket, HandleMessage);
-        
+
         // Exemplo de envio de mensagem
         string messageToSend = "Olá, WebSocket!";
         await SendWebSocketMessage(webSocket, messageToSend);
@@ -62,13 +63,13 @@ static async Task ListenWebSocket(WebSocket webSocket, Action<string> callback)
     do
     {
         receiveResult = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
-        receiveResult.CloseStatus
-WebSocketCloseStatus.
+        // receiveResult.CloseStatus
+        // WebSocketCloseStatus.
 
         if (receiveResult.MessageType == WebSocketMessageType.Text)
         {
             string message = Encoding.UTF8.GetString(buffer, 0, receiveResult.Count);
-            callback(message); // Chama o callback com a mensagem recebida
+            await callback(message); // Chama o callback com a mensagem recebida
         }
 
     } while (!receiveResult.CloseStatus.HasValue);

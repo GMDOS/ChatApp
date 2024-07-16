@@ -17,14 +17,18 @@ interface MessageType {
 }
 
 export default function Chat() {
-  const ws = new WebSocket("https://echo.websocket.org/");
+  let wsUrl =
+    "https://symmetrical-tribble-gj7644j76q42wrr9-5000.app.github.dev";
+  let ws = new WebSocket(wsUrl);
 
   ws.onopen = () => {
     // connection opened
-    ws.send("something"); // send a message
+    // ws.send(""); // send a message
   };
 
   ws.onmessage = (e) => {
+    const newMsg: MessageType = JSON.parse(e.data);
+    setMessages([...messages, newMsg]);
     console.log("message received");
     // a message was received
     console.log(e.data);
@@ -39,18 +43,10 @@ export default function Chat() {
     // connection closed
     console.log(e.code, e.reason);
   };
-
+  console.log(ws.readyState);
   const flatListRef = useRef<FlatList<MessageType>>(null);
   const [messages, setMessages] = useState<MessageType[]>([
     { my: true, message: "teste123", timestamp: "20:45" },
-    { my: false, message: "Outra mensagem", timestamp: "20:46" },
-    { my: true, message: "Mais uma mensagem", timestamp: "20:47" },
-    {
-      my: true,
-      message:
-        "MENSAGEM MUITO LONGA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      timestamp: "20:47",
-    },
   ]);
   const [newMessage, setNewMessage] = useState("");
 
@@ -73,6 +69,12 @@ export default function Chat() {
       };
       setMessages([...messages, newMsg]);
       setNewMessage(""); // Clear input field
+      ws = new WebSocket(wsUrl);
+      ws.onopen = () => {
+        // connection opened
+        ws.send(JSON.stringify(newMsg));
+        ws.close();
+      };
     }
   };
 
